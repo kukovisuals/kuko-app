@@ -146,7 +146,7 @@ input[type=number] {
 	// margin: 0 auto;
 
 	.children_lonely_container{
-		margin: 8% 15%;
+		margin: 12% 7% 8% 21%;
 		float: left;
 		color: $fontColor;
 	}
@@ -197,12 +197,13 @@ input[type=number] {
 
 .select_grid{
 	// border: 1px solid white;
-	width: 5vh;
+	width: 6vh;
 	border-radius: 10px;
-	height: 3.5vh;
+	height: 5.5vh;
 	background-image: $gradient;
-	padding: 7px;
+	padding: 2%;
 	margin-top: 6%;
+	    width: 6vh;
 }
 
 
