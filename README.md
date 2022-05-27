@@ -1,4 +1,4 @@
-# Foobar
+# Grid DashBoard
 
 ![poster](./img/screenshot.png)
 
