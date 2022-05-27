@@ -19,4 +19,4 @@ npm run build
 ```
 
 open the index.html file in your browser
-## Usage
+
