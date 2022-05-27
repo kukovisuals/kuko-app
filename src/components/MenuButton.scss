@@ -1,0 +1,86 @@
+$fontColor: #D6D7DD;
+$mainColor: #2D3038;
+
+.menu-main-container{
+  width: 100%;
+}
+
+.menu-container{
+
+  position: absolute; 
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $mainColor;
+  transform: translateX(0%);
+  color: $fontColor;
+  text-align: left;
+  // padding: 2rem;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  transition: transform 0.3s ease-in-out;
+
+
+  > a  {
+    text-decoration: none;
+    width: 85%;
+    height: 21vw;
+    font-size: 34px;
+    margin: 0 auto;
+    text-align: center;
+    color: #282c34;
+  }
+
+}
+
+.burger-menu{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 5rem;
+  height: 1.6rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 100;
+  left : 2%;
+  top: 4%;
+
+  > div {
+    // border: 2px solid white;
+    width: 2.2rem;
+    height: 0.3rem;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 5px;
+    background-color: $fontColor;
+  }
+}
+
+
+@media only screen and (min-width: 600px){
+ 
+  .menu-container{
+        width: 25vw;
+
+    > a{
+      width: 100%;
+          height: 7vw;
+    }
+    > a:hover{
+      background-color: #282c34;
+      color: #EFFFFA;
+    }
+  }
+  .menu-options{
+    position: relative;
+    color: $fontColor;
+    top: 40%;
+  }
+}
