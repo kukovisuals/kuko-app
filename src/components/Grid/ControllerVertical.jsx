@@ -39,6 +39,7 @@ function ControllerVertical({
               <input
                 type="text"
                 id="column"
+                placeholder="repeat(5, 1fr)"
                 value={template.column}
                 onChange={handleTemplate}
               />
@@ -48,6 +49,7 @@ function ControllerVertical({
               <input
                 type="text"
                 id="row"
+                placeholder="10% auto 10%"
                 value={template.row}
                 onChange={handleTemplate}
               />

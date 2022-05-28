@@ -38,6 +38,7 @@ function ControllerHorizontal({
               <label>
                 <input
                   type="number"
+                  placeholder="1"
                   required
                   id="gridColumnStart"
                   value={projectChildren.columnStart}
@@ -51,6 +52,7 @@ function ControllerHorizontal({
                 <input
                   type="number"
                   required
+                  placeholder="4"
                   id="gridColumnEnd"
                   value={projectChildren.columnEnd}
                   onChange={handleChildren}
@@ -62,6 +64,7 @@ function ControllerHorizontal({
               <label>
                 <input
                   type="number"
+                  placeholder="1"
                   required
                   id="gridRowStart"
                   value={projectChildren.rowStart}
@@ -74,6 +77,7 @@ function ControllerHorizontal({
               <label>
                 <input
                   type="number"
+                  placeholder="1"
                   required
                   id="gridRowEnd"
                   value={projectChildren.rowEnd}
