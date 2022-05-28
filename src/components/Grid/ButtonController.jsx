@@ -1,6 +1,6 @@
 import React from 'react';
-const ButtonController = () => (
-  <button className="boton" >
+const ButtonController = ({estilo}) => (
+  <button className="boton" style={estilo} >
     &#10004;
   </button>
 )

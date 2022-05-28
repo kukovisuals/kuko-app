@@ -1,66 +1,67 @@
-$gradient: linear-gradient(to bottom, #191D1F, #4e535e);
-$gradient_example: linear-gradient(313deg, #2D3038 59%, #191D1F);
-$mainColor: #2D3038;
-$columnColor: #383E44;
-$fontColor: #D6D7DD;
-$labelColor: #666A6E;
-$baseColor: #191D1F;
-$input_grid_color: #383E44;
+$gradient: linear-gradient(to bottom, #191d1f, #4e535e);
+$gradient_example: linear-gradient(313deg, #2d3038 59%, #191d1f);
+$mainColor: #2d3038;
+$columnColor: #383e44;
+$fontColor: #d6d7dd;
+$labelColor: #666a6e;
+$baseColor: #191d1f;
+$input_grid_color: #383e44;
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-body{
+body {
 	overflow: hidden;
 	background-color: $baseColor;
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: "Noto Sans JP", sans-serif;
 	// color: white;
 	font-size: 1vw;
 }
-#video_container{
-	position:fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+#video_container {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
 }
-.controllers_container{
+.controllers_container {
 	border: 1px solid $baseColor;
-	width:25%;
+	width: 25%;
 	height: 100vh;
 	position: absolute;
 	background-color: $mainColor;
 	color: $fontColor;
 	border-radius: 30px 10px 3px 50px;
 	border-left: 2px solid $baseColor;
-	z-index:10;
+	z-index: 10;
 }
 select {
-  // A reset of styles, including removing the default dropdown arrow
-  // appearance: none;
-  border: 1px solid $labelColor;
-  // Additional resets for further consistency
-  background-color: $mainColor;
-  border: none;
-  padding: 0 1em 0 0;
-  margin: 0;
-  width: 100%;
-  height: 2.5vw;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  color: $fontColor;
-  // line-height: inherit;
+	// A reset of styles, including removing the default dropdown arrow
+	// appearance: none;
+	border: 1px solid $labelColor;
+	// Additional resets for further consistency
+	background-color: $mainColor;
+	border: none;
+	padding: 0 1em 0 0;
+	margin: 0;
+	width: 100%;
+	height: 3vw;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+	color: $fontColor;
+	// line-height: inherit;
 }
 select:hover {
-  border: 2px solid white;
+	border: 2px solid white;
 }
-.parent_label_container, input{	
+.parent_label_container,
+input {
 	display: flex;
 	flex-direction: column;
 }
-input{
+input {
 	margin-bottom: 3%;
 	border-radius: 5px;
 	border: none;
@@ -68,42 +69,42 @@ input{
 	color: $fontColor;
 	background-color: $columnColor;
 }
-input[type=text] {
+input[type="text"] {
 	padding: 2% 5%;
 	color: $fontColor;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-  marin-left: 10%;
+	-webkit-appearance: none;
+	margin: 0;
+	marin-left: 10%;
 }
-input[type=number] {
+input[type="number"] {
 	// padding: 2% 5%;
 	// padding: 10px;
-	text-align:center;
+	text-align: center;
 	width: 30%;
 	color: $fontColor;
 	box-sizing: border-box;
 	background-image: $gradient;
 }
-.parent_label_container{
+.parent_label_container {
 	margin-top: 15%;
 	color: $labelColor;
 }
 
-.parent_contaienr{
+.parent_contaienr {
 	padding: 15% 25% 15% 10%;
 	position: relative;
 	top: 5%;
 
-    // height: 70vh;
+	// height: 70vh;
 
-	h3{
+	h3 {
 		position: absolute;
 	}
 }
-.boton{
+.boton {
 	border: none;
 	background-image: $gradient;
 	width: 30px;
@@ -116,8 +117,7 @@ input[type=number] {
 	cursor: pointer;
 }
 
-
-.children_controller{
+.children_controller {
 	position: absolute;
 	height: 40vh;
 	width: 50%;
@@ -126,7 +126,7 @@ input[type=number] {
 	bottom: 0;
 }
 
-.children_controller_grid{
+.children_controller_grid {
 	position: absolute;
 	width: 100%;
 	h3 {
@@ -139,28 +139,30 @@ input[type=number] {
 	margin: 0 auto;
 }
 
-.options_children_contianer{
+.options_children_contianer {
 	// border: 1px solid white;
-	width:40%;
-	// height: 5vw;
-	// margin: 0 auto;
+	width: 40%;
+	padding: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 
-	.children_lonely_container{
-		margin: 12% 7% 8% 21%;
-		float: left;
+	.children_lonely_container {
+		// margin: 12% 7% 8% 21%;
+    align-self: center;
 		color: $fontColor;
 	}
 }
 
-.input_children_contianer{
+.input_children_contianer {
 	// border: 1px solid white;
 	width: 100%;
 	height: 22vh;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
-	.input_label_container{
+	.input_label_container {
 		width: 36%;
 		height: 9vh;
 		// border: 1px solid white;
@@ -170,49 +172,48 @@ input[type=number] {
 		background-color: $input_grid_color;
 		border-radius: 15px;
 
-		span{
+		span {
 			// border: 1px solid black;
 			font-size: 0.9vw;
 			align-self: center;
 			color: $fontColor;
 		}
-		label{
+		label {
 			// border: 1px solid red;
 			border-radius: 100%;
 			width: 50px;
 			height: 50px;
 			align-self: center;
-			padding:1%;
+			padding: 1%;
 			margin-right: 14%;
 
-			input{
-			width: 50px;
-			height: 50px;
-			border-radius: 100%;
-
+			input {
+				width: 50px;
+				height: 50px;
+				border-radius: 100%;
 			}
 		}
 	}
 }
 
-.select_grid{
+.select_grid {
 	// border: 1px solid white;
 	width: 6vh;
 	border-radius: 10px;
-	height: 5.5vh;
+	height: 3.5vh;
 	background-image: $gradient;
-	padding: 2%;
-	margin-top: 6%;
-	    width: 6vh;
+	// padding: 2%;
+	// margin-top: 6%;
+  text-align: center;
+	width: 6vh;
 }
 
-
-.boton2{
+.boton2 {
 	position: absolute;
 	left: 200%;
 }
 
-.grid_container{
+.grid_container {
 	position: absolute;
 	width: 50%;
 	// height: 70vh;
@@ -222,71 +223,66 @@ input[type=number] {
 }
 .wrapper {
 	// border: 1px solid red;
-  display: grid;
-  gap: 10px;
-  // grid-auto-rows: 80% 80%;
-  height: 60vh;
+	display: grid;
+	gap: 10px;
+	// grid-auto-rows: 80% 80%;
+	height: 60vh;
 }
 .one {
 	border: 1px solid black;
-  // grid-column-start: 2;
-  // grid-column-end: 4;
-  // grid-row: 1;
-  background-color: #02C7B3;
+	// grid-column-start: 2;
+	// grid-column-end: 4;
+	// grid-row: 1;
+	background-color: #02c7b3;
 }
 .two {
 	border: 1px solid black;
-  background-color: #00AD9D;
+	background-color: #00ad9d;
 }
 .three {
 	border: 1px solid black;
-  background-color: #008577;
+	background-color: #008577;
 }
 .four {
 	border: 1px solid black;
-  // grid-column: 3;
-  // grid-row: 3;
-  background-color: #02C7B3;
+	// grid-column: 3;
+	// grid-row: 3;
+	background-color: #02c7b3;
 }
 .five {
 	border: 1px solid black;
-  grid-column: 2;
-  grid-row: 4;
-  background-color: #00453E;
+	grid-column: 2;
+	grid-row: 4;
+	background-color: #00453e;
 }
 .six {
 	border: 1px solid black;
-  grid-column: 3;
-  grid-row: 4;
-  background-color: #001F1C;
+	grid-column: 3;
+	grid-row: 4;
+	background-color: #001f1c;
 }
 
-
-
-.example_container{
+.example_container {
 	padding: 15% 25% 15% 10%;
-  position: relative;
-  top: 5%;
-  color: $fontColor;
+	position: relative;
+	top: 5%;
+	color: $fontColor;
 
-  .example_wrapper{
-    padding: 12%;
-	  background-image: $gradient_example;
-	  border-radius: 20px;
-  }
+	.example_wrapper {
+		padding: 12%;
+		background-image: $gradient_example;
+		border-radius: 20px;
+	}
 }
 
-
-
-.controllers_right_container{
-
+.controllers_right_container {
 	border: 1px solid $baseColor;
-	width:25%;
+	width: 25%;
 	height: 100vh;
 	right: 0;
 	position: absolute;
 	background-color: $mainColor;
 	color: $fontColor;
-  border-radius: 5px 34px 30px 4px;
-	z-index:10;
+	border-radius: 5px 34px 30px 4px;
+	z-index: 10;
 }

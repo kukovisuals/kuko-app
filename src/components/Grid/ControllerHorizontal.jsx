@@ -82,7 +82,7 @@ function ControllerHorizontal({
               </label>
             </div>
           </div>
-          <ButtonController />
+          <ButtonController  estilo={{display: 'none'}}/>
         </form>
       </div>
     </div>
