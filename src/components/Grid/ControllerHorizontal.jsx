@@ -9,7 +9,12 @@ function ControllerHorizontal({
   handleSquares,
   projectChildren,
   handleChildren,
+  howManyGrids
 }) {
+
+  const OptionsGrid = ({indice}) => (
+    <option value={indice}>{indice}</option>
+  )
   return (
     <div className="children_controller">
       <div className="children_controller_grid">
@@ -25,10 +30,11 @@ function ControllerHorizontal({
                 value={squares}
                 onChange={handleSquares}
               >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
+              {howManyGrids.map((d,i) => 
+                <OptionsGrid key={i+1} indice={i+1}/>
+                )
+              }
+
               </select>
             </label>
           </div>

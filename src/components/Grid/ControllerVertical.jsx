@@ -10,6 +10,8 @@ function ControllerVertical({
   values,
   template,
   handleTemplate,
+  gridNumbers,
+  handleGrid
 }) {
   // console.log('si', values, template)
   return (
@@ -17,23 +19,21 @@ function ControllerVertical({
       <div className="parent_contaienr">
         <h3>Grid Parent</h3>
         <form onSubmit={handleSubmit}>
-          <div className="options_contianer">
+          <div>
             <label className="parent_label_container">
-              <select value={values} onChange={handleChange}>
-                <option value="grid-template-columns">
-                  grid-template-columns{" "}
-                </option>
-                <option value="grid-template-rows">grid-template-rows</option>
-                <option value="grid-template-areas">grid-template-areas</option>
-                <option value="grid-template">grid-template</option>
-                <option value="grid-auto-columns">grid-auto-columns</option>
-                <option value="grid-auto-rows">grid-auto-rows</option>
-                <option value="grid-auto-flow">grid-auto-flow</option>
-                <option value="grid">grid</option>
-                <option value="gap">gap</option>
-              </select>
+              How Many Grids do you want
+              <input
+                className="howManyGrids_container"
+                type="number"
+                id="howManyGrids"
+                placeholder="4"
+                value={gridNumbers}
+                onChange={handleGrid}
+                maxLength="2"
+              />
             </label>
           </div>
+         
           <div className="create_value">
             <label className="parent_label_container">
               <input
@@ -65,3 +65,25 @@ function ControllerVertical({
 }
 
 export default ControllerVertical;
+
+
+
+/*
+<div className="options_contianer">
+  <label className="parent_label_container">
+    <select value={values} onChange={handleChange}>
+      <option value="grid-template-columns">
+        grid-template-columns{" "}
+      </option>
+      <option value="grid-template-rows">grid-template-rows</option>
+      <option value="grid-template-areas">grid-template-areas</option>
+      <option value="grid-template">grid-template</option>
+      <option value="grid-auto-columns">grid-auto-columns</option>
+      <option value="grid-auto-rows">grid-auto-rows</option>
+      <option value="grid-auto-flow">grid-auto-flow</option>
+      <option value="grid">grid</option>
+      <option value="gap">gap</option>
+    </select>
+  </label>
+</div>
+*/

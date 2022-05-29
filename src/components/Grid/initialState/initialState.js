@@ -2,6 +2,7 @@ export const addStyle = {
   gridTemplateColumns: "repeat(3, 1fr)",
 };
 
+export const howManySquares = (num=4) => Array.from({length: num}, (_,y) => y  );
 export const addStyleChildren = {
   1: {
     gridColumnStart: "2",
@@ -9,7 +10,56 @@ export const addStyleChildren = {
     gridRowStart: "",
     gridRowEnd: "",
   },
+  2: {
+    gridColumnStart: "",
+    gridColumnEnd: "",
+    gridRowStart: "",
+    gridRowEnd: "",
+  },
+  3: {
+    gridColumnStart: "",
+    gridColumnEnd: "",
+    gridRowStart: "",
+    gridRowEnd: "",
+  },
+  4: {
+    gridColumnStart: "",
+    gridColumnEnd: "",
+    gridRowStart: "",
+    gridRowEnd: "",
+  },
+  5: {
+    gridColumnStart: "",
+    gridColumnEnd: "",
+    gridRowStart: "",
+    gridRowEnd: "",
+  },
+  6: {
+    gridColumnStart: "",
+    gridColumnEnd: "",
+    gridRowStart: "",
+    gridRowEnd: "",
+  },
+  7: {
+    gridColumnStart: "",
+    gridColumnEnd: "",
+    gridRowStart: "",
+    gridRowEnd: "",
+  },
+  8: {
+    gridColumnStart: "",
+    gridColumnEnd: "",
+    gridRowStart: "",
+    gridRowEnd: "",
+  },
+  9: {
+    gridColumnStart: "",
+    gridColumnEnd: "",
+    gridRowStart: "",
+    gridRowEnd: "",
+  },
 };
+
 export const initialState = {
   attribute: "grid-template-columns",
 };
