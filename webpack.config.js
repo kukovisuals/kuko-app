@@ -7,7 +7,7 @@ module.exports = {
   // watch: true,
   mode: "development",
   devtool: "cheap-module-source-map",
-  entry: "./src/index.js",
+  entry: "./src/index.tsx",
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'build')
@@ -97,9 +97,10 @@ module.exports = {
           test: /\.(svg|eot|woff|woff2|ttf)$/,
           use: ['file-loader']
       },
+      { test: /\.tsx?$/, loader: "ts-loader" }
     ]
   },
    resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    extensions: ['*', '.js', '.jsx', ".tsx"],
   },
 }

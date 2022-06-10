@@ -2,7 +2,7 @@ export const addStyle = {
   gridTemplateColumns: "repeat(3, 1fr)",
 };
 
-export const howManySquares = (num=4) => Array.from({length: num}, (_,y) => y  );
+
 export const addStyleChildren = {
   1: {
     gridColumnStart: "2",
