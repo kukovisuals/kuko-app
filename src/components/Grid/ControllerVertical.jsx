@@ -4,26 +4,21 @@ import React from "react";
 /*
   Left Vertical Controller
 */
-
-interface ISprops {
-  sub: {
-    handleSubmit: any
-    handleChange: any
-    values: any
-    template: any
-    handleTemplate: any
-    gridNumbers: number
-    handleGrid: any  
-  }
-}
-
-const ControllerVertical: React.FC<ISprops> =({sub}) => {
+function ControllerVertical({
+  handleSubmit,
+  handleChange,
+  values,
+  template,
+  handleTemplate,
+  gridNumbers,
+  handleGrid
+}) {
   // console.log('si', values, template)
   return (
     <div className="controllers_container">
       <div className="parent_contaienr">
         <h3>Grid Parent</h3>
-        <form onSubmit={sub.handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div>
             <label className="parent_label_container">
               How Many Grids do you want
@@ -32,9 +27,9 @@ const ControllerVertical: React.FC<ISprops> =({sub}) => {
                 type="number"
                 id="howManyGrids"
                 placeholder="4"
-                value={sub.gridNumbers}
-                onChange={sub.handleGrid}
-                maxLength={2}
+                value={gridNumbers}
+                onChange={handleGrid}
+                maxLength="2"
               />
             </label>
           </div>
@@ -45,8 +40,8 @@ const ControllerVertical: React.FC<ISprops> =({sub}) => {
                 type="text"
                 id="column"
                 placeholder="repeat(5, 1fr)"
-                value={sub.template.column}
-                onChange={sub.handleTemplate}
+                value={template.column}
+                onChange={handleTemplate}
               />
               grid-template-columns
             </label>
@@ -55,16 +50,16 @@ const ControllerVertical: React.FC<ISprops> =({sub}) => {
                 type="text"
                 id="row"
                 placeholder="10% auto 10%"
-                value={sub.template.row}
-                onChange={sub.handleTemplate}
+                value={template.row}
+                onChange={handleTemplate}
               />
               grid-template-rows
             </label>
           </div>
-          {/* <ButtonController /> */}
+          <ButtonController />
         </form>
       </div>
-      {/* <Examples /> */}
+      <Examples />
     </div>
   );
 }
