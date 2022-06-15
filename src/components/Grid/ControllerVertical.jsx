@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonController from "./ButtonController";
-import Examples from "./Examples";
+// import ButtonController from "./ButtonController";
+// import Examples from "./Examples";
 /*
   Left Vertical Controller
 */
@@ -66,24 +66,3 @@ function ControllerVertical({
 
 export default ControllerVertical;
 
-
-
-/*
-<div className="options_contianer">
-  <label className="parent_label_container">
-    <select value={values} onChange={handleChange}>
-      <option value="grid-template-columns">
-        grid-template-columns{" "}
-      </option>
-      <option value="grid-template-rows">grid-template-rows</option>
-      <option value="grid-template-areas">grid-template-areas</option>
-      <option value="grid-template">grid-template</option>
-      <option value="grid-auto-columns">grid-auto-columns</option>
-      <option value="grid-auto-rows">grid-auto-rows</option>
-      <option value="grid-auto-flow">grid-auto-flow</option>
-      <option value="grid">grid</option>
-      <option value="gap">gap</option>
-    </select>
-  </label>
-</div>
-*/

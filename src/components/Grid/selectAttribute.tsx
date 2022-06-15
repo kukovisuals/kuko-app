@@ -1,7 +1,6 @@
-import React from 'react';
 
-function selectAttribute(name) {
-  let output = [];
+function selectAttribute(name: string) {
+  let output: any = [];
   switch (name) {
     case "grid-template-columns":
       output = ["gridTemplateColumns", "gridTemplateRows"];
