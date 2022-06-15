@@ -6,23 +6,17 @@ import React from 'react';
 // } from "react-router-dom";
 
 // import Home from './pages/Home.jsx';
-// import GridCss from './pages/GridCss';
-import Graph from './components/Graph/Graph';
-import useWindowSize from './components/Hooks/useWindowSize';
+import GridCss from './pages/GridCss';
 
 type AppProps = {
   name: string;
 }
 function App({ name }: AppProps) {
-  const [x, y] = useWindowSize()
 
   return( 
     <div>
       {name}
-      <Graph
-        width={x}
-        height={y}
-      />
+      <GridCss/>
     </div>    
 
  	);
